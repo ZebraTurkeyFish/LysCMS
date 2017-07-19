@@ -20,6 +20,7 @@ class CreateMessagesTable extends Migration
             $table->text('message');
             $table->integer('message_type_id');
             $table->integer('product_id')->nullable();
+            $table->tinyInteger('read')->nullable();
             $table->timestamps();
         });
     }
